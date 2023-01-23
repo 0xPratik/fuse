@@ -61,7 +61,7 @@ const onClickMintParent = async() => {
             <LinkBox>
                <Box bg="green.300" w='250px' p={4} borderRadius={"md"}>
               <Text color='white' fontWeight={"bold"}>Congrat&apos;s on Minting a Composable NFT</Text>
-                 <LinkOverlay href={link} >
+                 <LinkOverlay href={link} target="_blank" >
                  Click to check the tx
                  </LinkOverlay> 
             </Box>
@@ -89,7 +89,8 @@ const onClickMintParent = async() => {
       boxShadow={"md"}
     >
       <Flex align={"center"} justify="center" w='50%' bg='blackAlpha.100'>
-        <Image src={image} blurDataURL="/load.png" width={300} height={350} alt="Dummy Image" />
+       {mint === undefined ? <Heading>You havent minted a Parent NFT Yet</Heading> :
+        <Image src={image} blurDataURL="/load.png" width={300} height={350} alt="Dummy Image" />}
       </Flex>
       <Box w='50%' p={3}>
         <Text pb={4} textAlign={"left"} w='300px' fontWeight="bold">

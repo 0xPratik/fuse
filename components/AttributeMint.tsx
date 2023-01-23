@@ -64,7 +64,7 @@ function AttributeMint() {
               <LinkBox>
                  <Box bg="green.500" w='200px' p={4} borderRadius={"md"}>
                 <Text color='white' fontWeight={"bold"}>Congrat&apos;s on Minting a Composable NFT</Text>
-                   <LinkOverlay href={link} >
+                   <LinkOverlay href={link} target="_blank" >
                    Click to check the tx
                    </LinkOverlay> 
               </Box>

@@ -8,7 +8,7 @@ interface ParentMintState {
 }
 
 export const useParentMint = create<ParentMintState>((set) => ({
-    parentMint: new anchor.web3.PublicKey("oRTf7mYHzHWwwmsbWATuKURtL3YxzXAXetkHdwhaXrU") ,
+    parentMint: undefined ,
     setMint: (mint) => set({ parentMint: mint }),
 
 }))
